@@ -1,3 +1,5 @@
+import scala.annotation.tailrec
+
 object WeekDays  {
     var week_days = List("Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela")
 
@@ -7,6 +9,9 @@ object WeekDays  {
       println("Week days using while : " + weekDaysUsingWhile());
       println("Week days using recursion : " + weekDaysRecursion(week_days));
       println("Week days backwards using recursion : " + weekDaysBackwardsRecursion(week_days));
+      println("Week days using tail recursion : " + weekDaysTailRecursion(week_days));
+      println("Week days using fold left: " + weekDaysUsingFoldLeft());
+      println("Week days using fold right: " + weekDaysUsingFoldRight());
     }
 
     // zadanie 1
@@ -49,5 +54,24 @@ object WeekDays  {
       else weekDaysBackwardsRecursion(l.tail)+ l.head  + ","
     }
 
+    // zadanie 3
+    def weekDaysTailRecursion(l : List[String]): String = {
+      @tailrec
+      def iter(x: List[String], result: String): String =
+        if (x.isEmpty) result
+        else {
+          iter(x.tail, result + x.head + ",")
+        }
+      iter(l, "")
+    }
+
+    // zadanie 4
+    def weekDaysUsingFoldLeft() : String = {
+      week_days.foldLeft("")(_  + _ + ",")
+    }
+
+    def weekDaysUsingFoldRight() : String = {
+      week_days.foldRight("")(_  +  "," + _ )
+    }
 
 }
