@@ -19,7 +19,7 @@ object WeekDays  {
       var result = ""
       for (day <- week_days)
         result = result.concat(day + ',')
-      return result
+      result
     }
 
     def pWeekDays() : String = {
@@ -28,7 +28,7 @@ object WeekDays  {
         if (day.startsWith("P")) {
           result = result.concat(day + ',')
         }
-      return result
+      result
     }
 
     def weekDaysUsingWhile() : String = {
@@ -38,7 +38,7 @@ object WeekDays  {
         result = result.concat(week_days(counter) + ',')
         counter +=  1
       }
-      return result
+      result
     }
 
     // zadanie 2
