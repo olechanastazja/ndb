@@ -12,6 +12,7 @@ object WeekDays  {
       println("Week days using tail recursion : " + weekDaysTailRecursion(week_days));
       println("Week days using fold left: " + weekDaysUsingFoldLeft());
       println("Week days using fold right: " + weekDaysUsingFoldRight());
+      println("Week days starting with P using fold left: " + pWeekDaysUsingFoldLeft());
     }
 
     // zadanie 1
@@ -72,6 +73,10 @@ object WeekDays  {
 
     def weekDaysUsingFoldRight() : String = {
       week_days.foldRight("")(_  +  "," + _ )
+    }
+
+    def pWeekDaysUsingFoldLeft() : String = {
+      week_days.foldLeft(""){(z,f) => if (f.startsWith("P")) z + f + "," else z }
     }
 
 }
