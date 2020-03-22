@@ -1,3 +1,5 @@
+package nbd_1
+
 import scala.annotation.tailrec
 
 object WeekDays  {

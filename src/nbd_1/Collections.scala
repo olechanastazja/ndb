@@ -1,4 +1,4 @@
-import scala.language.postfixOps
+package nbd_1
 
 object Collections {
 
