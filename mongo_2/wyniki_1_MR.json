@@ -1,0 +1,27 @@
+{
+	"result" : "average",
+	"timeMillis" : 218,
+	"counts" : {
+		"input" : 10000,
+		"emit" : 10000,
+		"reduce" : 200,
+		"output" : 2
+	},
+	"ok" : 1
+}
+[
+	{
+		"_id" : "Female",
+		"value" : {
+			"avg_weight" : 70.1138410596027,
+			"avg_height" : 167.12617499498307
+		}
+	},
+	{
+		"_id" : "Male",
+		"value" : {
+			"avg_weight" : 70.00180785329881,
+			"avg_height" : 167.08008172214488
+		}
+	}
+]
