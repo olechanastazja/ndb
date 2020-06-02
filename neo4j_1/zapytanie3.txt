@@ -1,3 +1,2 @@
-MATCH (m:Movie)<-[:ACTED_IN]-(a:Person)
- WHERE a.name='Hugo Weaving'
- RETURN m.director
+MATCH (hugo { name: 'Hugo Weaving' })-[:ACTED_IN]->(movie)<-[:DIRECTED]-(director)
+ RETURN DISTINCT director

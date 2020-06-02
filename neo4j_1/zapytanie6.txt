@@ -1,0 +1,2 @@
+MATCH (person:Person)<-[p:ACTED_IN]->(movie:Movie)
+ RETURN person, count(movie)

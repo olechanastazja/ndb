@@ -1,0 +1,2 @@
+MATCH (matrix {title: 'The Matrix' })<-[:ACTED_IN]-(actor)-[:ACTED_IN]-(movie)
+ RETURN DISTINCT movie
