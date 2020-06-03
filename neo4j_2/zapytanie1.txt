@@ -1,0 +1,2 @@
+MATCH (dar:town {name: 'Darjeeling' }),(s:peak { name: 'Sandakphu'}), p = allShortestPaths((dar)-[*]-(s))
+RETURN p

@@ -1,0 +1,182 @@
+﻿[
+  {
+    "r": {
+      "identity": 268,
+      "start": 4,
+      "end": 193,
+      "type": "ACTED_IN",
+      "properties": {}
+    },
+    "m": {
+      "identity": 193,
+      "labels": [
+        "Movie"
+      ],
+      "properties": {
+        "title": "Captain America: The First Avenger",
+        "tagline": "Steve Rogers, a rejected military soldier, transforms into Captain America after taking a dose of a \"Super-Soldier serum\".",
+        "released": 2011
+      }
+    },
+    "b": {
+      "identity": 4,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Hugo Weaving",
+        "born": 1960
+      }
+    }
+  },
+  {
+    "r": {
+      "identity": 270,
+      "start": 197,
+      "end": 193,
+      "type": "ACTED_IN",
+      "properties": {}
+    },
+    "m": {
+      "identity": 193,
+      "labels": [
+        "Movie"
+      ],
+      "properties": {
+        "title": "Captain America: The First Avenger",
+        "tagline": "Steve Rogers, a rejected military soldier, transforms into Captain America after taking a dose of a \"Super-Soldier serum\".",
+        "released": 2011
+      }
+    },
+    "b": {
+      "identity": 197,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Samuel L.Jackson",
+        "born": 1948
+      }
+    }
+  },
+  {
+    "r": {
+      "identity": 267,
+      "start": 196,
+      "end": 193,
+      "type": "ACTED_IN",
+      "properties": {}
+    },
+    "m": {
+      "identity": 193,
+      "labels": [
+        "Movie"
+      ],
+      "properties": {
+        "title": "Captain America: The First Avenger",
+        "tagline": "Steve Rogers, a rejected military soldier, transforms into Captain America after taking a dose of a \"Super-Soldier serum\".",
+        "released": 2011
+      }
+    },
+    "b": {
+      "identity": 196,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Chris Evans",
+        "born": 1981
+      }
+    }
+  },
+  {
+    "r": {
+      "identity": 264,
+      "start": 192,
+      "end": 193,
+      "type": "DIRECTED",
+      "properties": {}
+    },
+    "m": {
+      "identity": 193,
+      "labels": [
+        "Movie"
+      ],
+      "properties": {
+        "title": "Captain America: The First Avenger",
+        "tagline": "Steve Rogers, a rejected military soldier, transforms into Captain America after taking a dose of a \"Super-Soldier serum\".",
+        "released": 2011
+      }
+    },
+    "b": {
+      "identity": 192,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Joe Johnston",
+        "born": 1950
+      }
+    }
+  },
+  {
+    "r": {
+      "identity": 265,
+      "start": 194,
+      "end": 193,
+      "type": "WROTE",
+      "properties": {}
+    },
+    "m": {
+      "identity": 193,
+      "labels": [
+        "Movie"
+      ],
+      "properties": {
+        "title": "Captain America: The First Avenger",
+        "tagline": "Steve Rogers, a rejected military soldier, transforms into Captain America after taking a dose of a \"Super-Soldier serum\".",
+        "released": 2011
+      }
+    },
+    "b": {
+      "identity": 194,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Christopher Marcus",
+        "born": 1970
+      }
+    }
+  },
+  {
+    "r": {
+      "identity": 266,
+      "start": 195,
+      "end": 193,
+      "type": "WROTE",
+      "properties": {}
+    },
+    "m": {
+      "identity": 193,
+      "labels": [
+        "Movie"
+      ],
+      "properties": {
+        "title": "Captain America: The First Avenger",
+        "tagline": "Steve Rogers, a rejected military soldier, transforms into Captain America after taking a dose of a \"Super-Soldier serum\".",
+        "released": 2011
+      }
+    },
+    "b": {
+      "identity": 195,
+      "labels": [
+        "Person"
+      ],
+      "properties": {
+        "name": "Stephen McFeely",
+        "born": 1969
+      }
+    }
+  }
+]

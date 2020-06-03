@@ -1,0 +1,9 @@
+CREATE (joe:Person { name:'Joe Johnston', born:1950})-[:DIRECTED]->(m:Movie {title:'Captain America: The First Avenger', tagline:'Steve Rogers, a rejected military soldier, transforms into Captain America after taking a dose of a "Super-Soldier serum".', released:2011})<-[:WROTE]-(christopher:Person { name: 'Christopher Marcus', born:1970 }),(steve:Person { name: 'Stephen McFeely', born:1969 })-[:WROTE]->(m)<-[:ACTED_IN]-(chris:Person {name: 'Chris Evans', born:1981})
+
+MATCH (p:Person), (m:Movie)
+WHERE p.name = 'Hugo Weaving' AND m.title = 'Captain America: The First Avenger'
+CREATE (p)-[r:ACTED_IN]->(m)<-[:ACTED_IN]-(sam:Person{name:'Samuel L.Jackson', born:1948})
+RETURN type(r)
+
+MATCH (m:Movie {title: 'Captain America: The First Avenger'})-[r]-(b)
+RETURN r, m, b
