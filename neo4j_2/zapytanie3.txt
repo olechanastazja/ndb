@@ -1,0 +1,9 @@
+MATCH p=((m:town {name: 'Darjeeling' })-[*]->(n:peak{name:"Sandakphu"}))
+WITH *, relationships(p) AS r
+RETURN DISTINCT p, REDUCE(start=0, d in r | start + d.distance) AS distance
+ORDER BY distance DESC
+
+(to zapytanie zwraca pusty wynik)
+MATCH p=((m:town {name: 'Darjeeling' })-[:twowheeler*]->(a))
+WHERE ALL(x IN relationships(p) WHERE x.summer = 'true')
+RETURN a

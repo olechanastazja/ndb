@@ -1,3 +1,3 @@
 MATCH (dar:town {name: 'Darjeeling' }),(s:peak { name: 'Sandakphu'}), p = allShortestPaths((dar)-[*]-(s))
-WHERE NONE (r IN relationships(p) WHERE r.winter = fals e)
+WHERE NONE (r IN relationships(p) WHERE r.winter = false)
 RETURN p
