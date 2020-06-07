@@ -1,0 +1,8 @@
+MATCH p = (la:Airport)<-[:ORIGIN|DESTINATION*..5]->(m:Airport)<-[:ORIGIN|DESTINATION*2]->(d:Airport)
+WITH *, relationships(p) AS r, REDUCE(price = 0, n IN [x IN NODES(p) WHERE 'Flight' IN LABELS(x)] |
+    price + [(n)<-[:ASSIGN]-(ticket) | ticket.price][0]
+  ) AS total_price
+WHERE la<>d
+RETURN p, total_price
+ORDER BY total_price ASC
+LIMIT 1

@@ -1,0 +1,6 @@
+MATCH p = (la:Airport { name:"LAX" })<-[:ORIGIN|DESTINATION*..4]->(d:Airport)
+WITH *, relationships(p) AS r
+WHERE REDUCE(price = 0, n IN [x IN NODES(p) WHERE 'Flight' IN LABELS(x)] |
+    price + [(n)<-[:ASSIGN]-(ticket) | ticket.price][0]
+  ) < 3000
+RETURN d

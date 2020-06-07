@@ -1,0 +1,3 @@
+MATCH (n:Flight)-[r:ORIGIN|DESTINATION]-(a:Airport)
+RETURN n.airline AS airline, COUNT(DISTINCT a) AS total_airports
+ORDER BY total_airports DESC
