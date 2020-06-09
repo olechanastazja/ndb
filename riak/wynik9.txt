@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVIcypz/frockfuawZTImMfKcEkk5AZfFgA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.5 (jokes are better explained)
+Link: </buckets/s21808>; rel="up"
+Last-Modified: Tue, 09 Jun 2020 14:12:34 GMT
+ETag: "6or150FY0LE02YGl2gOfHs"
+Date: Tue, 09 Jun 2020 14:15:09 GMT
+Content-Type: application/json
+Content-Length: 27
+
+{"name": "Agnieszka Olech"}

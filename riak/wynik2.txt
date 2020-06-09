@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVIcypz/frocyKnPYErkyGNlMBcIucGXBQA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.5 (jokes are better explained)
+Link: </buckets/s21808>; rel="up"
+Last-Modified: Tue, 09 Jun 2020 13:52:55 GMT
+ETag: "5paEwAmSjfqulshnxweWLe"
+Date: Tue, 09 Jun 2020 13:56:00 GMT
+Content-Type: application/json
+Content-Length: 85
+
+{"name": "Omar Little", "nationality": "USA", "date-of-birth": "1985-Jul-23", "age":35}

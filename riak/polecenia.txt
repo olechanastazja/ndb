@@ -1,0 +1,39 @@
+1.
+curl -XPOST -i -H "Content-Type: application/json" -d '{"name": "Omar Little", "nationality": "USA", "date-of-birth": "1985-Jul-23", "age":35}' http://172.17.0.2:8098/buckets/s21808/keys/Omar
+curl -XPOST -i -H "Content-Type: application/json" -d '{"name": "Russell Bell", "nationality": "USA", "date-of-birth": "1982-Sep-23", "age":38}' http://172.17.0.2:8098/buckets/s21808/keys/Stringer
+curl -XPOST -i -H "Content-Type: application/json" -d '{"name": "Reginald Cousind", "nationality": "USA", "date-of-birth": "1981-Jan-23", "age":39}' http://172.17.0.2:8098/buckets/s21808/keys/Bubbles
+curl -XPOST -i -H "Content-Type: application/json" -d '{"name": "Lester Freamon", "nationality": "USA", "date-of-birth": "1980-Jul-02", "age":40}' http://172.17.0.2:8098/buckets/s21808/keys/Lester
+curl -XPOST -i -H "Content-Type: application/json" -d '{"name": "Kima Greggs", "nationality": "Vietnam", "date-of-birth": "1984-Jul-23", "age":34}' http://172.17.0.2:8098/buckets/s21808/keys/Greggs
+
+2.
+curl -i http://172.17.0.2:8098/buckets/s21808/keys/Omar
+
+3.
+curl -XPUT -i -H "Content-Type: application/json" -d '{"name": "Omar Little", "nationality": "USA", "date-of-birth": "1985-Jul-23", "age":35, "height":190}' http://172.17.0.2:8098/buckets/s21808/keys/Omar
+
+4.
+curl -XPUT -i -H "Content-Type: application/json" -d '{"name": "Russell Bell", "nationality": "USA", "date-of-birth": "1982-Sep-23"}' http://172.17.0.2:8098/buckets/s21808/keys/Stringer
+
+5.
+curl -XPUT -i -H "Content-Type: application/json" -d '{"name": "Russell Bell a.k.a. Stringer", "nationality": "USA", "date-of-birth": "1982-Sep-23"}' http://172.17.0.2:8098/buckets/s21808/keys/Stringer
+
+6.
+curl -i -XDELETE http://172.17.0.2:8098/buckets/s21808/keys/Greggs
+
+7.
+curl -i http://172.17.0.2:8098/buckets/s21808/keys/McNulty
+
+8.
+curl -XPOST -i -H "Content-Type: application/json" -d '{"name": "Agnieszka Olech"}' http://172.17.0.2:8098/buckets/s21808/keys/
+
+9.
+curl -i http://172.17.0.2:8098/buckets/s21808/keys/B4JRpScAWm2McVK5JQJuYkB8z6s
+
+10.
+curl -i -XDELETE http://172.17.0.2:8098/buckets/s21808/keys/B4JRpScAWm2McVK5JQJuYkB8z6s
+
+
+
+
+
+
