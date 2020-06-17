@@ -1,5 +1,7 @@
 package nbd_1
 
+import scala.language.postfixOps
+
 object Collections {
 
   val mapProducts = Map("Chocolate" -> 20,
