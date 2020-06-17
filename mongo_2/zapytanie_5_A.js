@@ -4,6 +4,7 @@ printjson(db.people.aggregate(
     {$group: {
         '_id': "$credit.currency",
         'sumAll':  { $sum: "$credit.balance" },
+        'avg':  { $avg: "$credit.balance" },
     }
     }
     ).toArray()

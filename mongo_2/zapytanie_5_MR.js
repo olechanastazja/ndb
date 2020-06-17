@@ -7,7 +7,10 @@ var mapFunction = function() {
 };
 
 var reduceFunction = function(key, values) {
-   return Array.sum(values)
+    return {
+       'balance': Array.sum(values),
+       'avg': Array.avg(values)
+    }
 };
 
 
